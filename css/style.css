@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #30303D;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head::before {
+  content: "";
+  background: url("../img/5.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202028;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+header, form {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  margin: 0px 10vw;
+  color: #202028;
+}
+
+.i-1 {
+  margin: 0px 10vw;
+}
+
+.i-1:hover {
+  cursor: pointer;
+}
+
+form input, form button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background: #202028;
+}
+
+form input {
+  border-radius: 0.2rem 0rem 0rem 0.2rem;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+form button {
+  border-radius: 0rem 0.2rem 0.2rem 0rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  color: grey;
+}
+
+form button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #181824;
+}
+
+.todo-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.todo-cont ul {
+  max-height: 293px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #202028;
+  padding: 0.5rem;
+  font-size: 1rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-bottom: 1px solid #363434;
+}
+
+.todos {
+  min-width: 222px;
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.3rem;
+}
+
+.check-button, .del-button {
+  background-color: #25273C;
+  border: none;
+  margin: 0rem 1rem;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  color: #2fff39;
+}
+
+.del-button {
+  color: #FE1744;
+}
+
+.check-button:hover {
+  color: white;
+}
+
+.del-button:hover {
+  color: white;
+}
+
+.fa-check-circle, .fa-times {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.del {
+  opacity: 0;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #202028;
+  border-radius: 0.2rem;
+  position: absolute;
+  bottom: 39px;
+  -webkit-box-shadow: 0px 10px 50px black;
+          box-shadow: 0px 10px 50px black;
+  font-size: 0.8rem;
+}
+
+.all, .complete, .active {
+  padding: 13px 40px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.all:hover, .complete:hover, .active:hover {
+  color: cyan;
+}
+/*# sourceMappingURL=style.css.map */
